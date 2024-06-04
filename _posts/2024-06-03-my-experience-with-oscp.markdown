@@ -14,7 +14,7 @@ Today, I will share with you my journey from preparation to taking the OSCP cert
 > The Offensive Security Certified Professional is an ethical hacking certification offered by Offensive Security that teaches penetration testing methodologies and the use of tools included in the Kali Linux distribution.
 >
 
-
+![]({{site.baseurl}}/images/oscp.jpg)
 
 ### Start
 
@@ -26,12 +26,11 @@ In the last 15 days, I focused on the challenge labs, aiming for the 10 bonus po
 
 A strategy I used was to take the exam two days after obtaining the last flag needed for the 10 extra points. The challenge labs were essential as they allowed me to stay sharp and prepared for the exam.
 
-![]({{site.baseurl}}/images/oscp.jpg)
-
 ### Exam
 
 For the exam, the night before, I focused on reviewing my notes and relaxing by playing some games.
 When I started the exam, I was very nervous, literally shaking, which made me stuck for hours. After several attempts, I managed to get unstuck and then took some time to take a shower and clear my head. When I came back, everything flowed naturally.
+
 My tip is: take breaks, eat well, and take a good shower when nothing is working.
 
 During the exam, when I managed to achieve the objectives, an extremely good feeling emerged, a sense of accomplishment. I confess that I thought I wouldn't be able to do it.

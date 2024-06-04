@@ -40,5 +40,3 @@ This was my first experience with a proctored exam from OffSec. I believe that f
 I am very grateful to OffSec for the incredible experience.
 
 These were very emotional days for me. Thank you.
-
-![]({{site.baseurl}}/images/oscp1.jpg)

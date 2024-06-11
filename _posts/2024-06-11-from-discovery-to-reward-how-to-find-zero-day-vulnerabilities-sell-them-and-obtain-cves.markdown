@@ -77,3 +77,72 @@ I injected this payload into the suspicious parameter. Upon checking the Burp Co
 ![]({{site.baseurl}}/images/704.jpg)
 
 ![]({{site.baseurl}}/images/705.jpg)
+
+### Verification of Global Usage of the Affected Software
+After discovering the vulnerability, I used the CVSS calculator to accurately determine its severity. With this metric in hand, I created a dork to identify the affected product using FOFA. Shodan can also be used for this purpose. Through these tools, I found that the product was present on over 2,000 exposed hosts on the internet.
+* https://fofa.info/
+* https://www.shodan.io/
+
+![]({{site.baseurl}}/images/706.jpg)
+
+![]({{site.baseurl}}/images/707.jpg)
+
+### Report
+With the vulnerability identified, I created a detailed Proof of Concept (PoC), describing the process of exploiting the vulnerability. The PoC is essential for documenting and communicating the discovery clearly and efficiently.
+
+### Final Research Results
+During the process of creating this post, I tested two software applications and discovered a total of eight vulnerabilities. Among them, I identified:
+* 1x Python Code Injection vulnerability;
+* 2x Privilege Escalation (PrivEsc) vulnerabilities;
+* 5x Stored Cross-Site Scripting (XSS) vulnerabilities.
+
+
+For these discovered vulnerabilities, I utilized two scenarios that will be presented in the next topic on Responsible Disclosure and Monetization of the Discovery.
+
+### Next Steps After Discovering the Vulnerability
+Now that you have identified the vulnerability, assessed its severity, and understood its global impact, you have two main options to proceed:
+
+* Responsible Disclosure: Submit the Proof of Concept (PoC) to a vulnerability database (such as VulDB) and request the assignment of a CVE (Common Vulnerabilities and Exposures). This process helps officially catalog the vulnerability, allowing vendors to develop patches and the security community to take necessary actions to mitigate risks.
+* Monetization of the Discovery: Submit your discovery to a Zero-Day incentive program that offers financial rewards for critical vulnerabilities. Programs like Zero Day Initiative (TrendMicro), Zerodium, and Crowdfense are among those that pay for unknown vulnerabilities affecting widely used technologies.
+
+Both options contribute to cybersecurity in different ways, allowing you to choose between official recognition of your discovery and financial reward for your efforts.
+
+#### Commercialization of Zero-Day Vulnerabilities
+For critical vulnerabilities affecting a large number of hosts or specific technology, you might consider "selling" your Zero-Day to incentive programs that purchase these discoveries. Here is a list of "gray" markets that might be interested in acquiring your vulnerability:
+* Zero Day Initiative (TrendMicro): This program offers rewards for unknown vulnerabilities affecting widely used products, helping to protect end-users by notifying vendors for patches (https://www.zerodayinitiative.com/).
+![]({{site.baseurl}}/images/708.jpg)
+
+
+* Zerodium: One of the most well-known in the industry, it offers significant payments for Zero-Day vulnerabilities across a wide range of platforms and devices. They have particular interest in exploits affecting operating systems, browsers, and mobile devices (https://www.zerodium.com/).
+![]({{site.baseurl}}/images/709.jpg)
+
+
+* Crowdfense: Specialized in acquiring high-value vulnerabilities, primarily focusing on cybersecurity, offering substantial rewards for exploits that can compromise critical systems (https://www.crowdfense.com/).
+![]({{site.baseurl}}/images/710.jpg)
+
+
+These programs not only provide financial compensation but also ensure that vulnerabilities are handled responsibly, helping to improve the overall security of affected systems. By choosing to sell your Zero-Day, you contribute to creating a safer digital environment while being fairly rewarded for your discoveries.
+
+#### Requesting a CVE
+For any critical vulnerability you find during your research, it is possible to request a CVE. To do this, I recommend using the VulDB platform (https://vuldb.com/).
+
+1. Create an Account: Sign up on the platform.
+2. Access the "Entries" Section: Navigate to "Entries" and click on "Add".
+3. Fill in the Required Fields: Complete the fields according to the software or technology where the vulnerability was identified. 
+
+In the example below, I submitted a Privilege Escalation vulnerability found during my research.
+
+![]({{site.baseurl}}/images/711.jpg)
+
+After filling in all the required fields and submitting the detailed description of the vulnerability, remember to check the box that says "Request a CVE". The VulDB team will review your submission and, within approximately two weeks, assign a CVE to you.
+
+It is important to highlight that the VulDB team contacts the responsible software vendor to notify them about the newly discovered vulnerability.
+
+Here is an example of how you will receive the notification that your vulnerability is valid and that you have been assigned a CVE:
+
+![]({{site.baseurl}}/images/712.jpg)
+
+### Conclusion
+The pursuit of Zero-Day vulnerabilities not only provides recognition but also strengthens your resume, demonstrating that you possess relevant and valuable skills in Offensive Security. Participating in the discovery and disclosure of vulnerabilities enhances your credibility within the cybersecurity community and can open doors to new professional opportunities.
+
+I hope you found this content useful and that it has helped you in some way. Until next time!

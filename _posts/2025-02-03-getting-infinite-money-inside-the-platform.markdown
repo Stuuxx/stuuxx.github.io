@@ -25,9 +25,11 @@ Let's do it!!
 
 ### Proof of Concept
 To start, let's create our test account...
+
 ![]({{site.baseurl}}/images/992.png)
 
 Account created, we will ask you to resend the account activation email (The application apparently had some problem sending us the email...).
+
 ![]({{site.baseurl}}/images/993.png)
 
 In the activation email, we received a confirmation link. We will copy it, intercept the request to prevent accidental activation, and then send it to Turbo Intruder.

@@ -55,6 +55,8 @@ We were able to exploit the flaw in the account verification logic activated via
 
 The vulnerability is triaged and the vulnerability has been fixed
 
+![]({{site.baseurl}}/images/bounty.png)
+
 See you next time, don't forget to connect with me on LinkedIn:
 https://www.linkedin.com/in/eduardo-maragno/
 
